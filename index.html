@@ -15,6 +15,34 @@
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
   <!-- 本模板的自定义样式 -->
   <link href="css/resume.min.css" rel="stylesheet">
+  <style>
+    /* 定义淡入动画 */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .resume-item {
+      /* 隐藏初始状态 */
+      opacity: 0;
+      /* 应用动画 */
+      animation: fadeIn 1s ease-out forwards; 
+    }
+
+    /* 为每个项目添加延迟 */
+    .resume-item:nth-child(1) { animation-delay: 0.2s; }
+    .resume-item:nth-child(2) { animation-delay: 0.4s; }
+    .resume-item:nth-child(3) { animation-delay: 0.6s; }
+    .resume-item:nth-child(4) { animation-delay: 0.8s; }
+    .resume-item:nth-child(5) { animation-delay: 1s; }
+    .resume-item:nth-child(6) { animation-delay: 1.2s; }
+  </style>
 </head>
 
 <body id="page-top">
@@ -51,21 +79,19 @@
     <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="about">
       <div class="w-100">
         <h1 class="mb-3">郭嘉毅</h1>
-        <div class="subheading mb-5">通信软件技术 | 广东深圳</div>
+        <div class="subheading mb-5">居住地 | 广东深圳</div>
+        <div class="subheading mb-5">电话 | 13530035846</div>
+        <div class="subheading mb-5">邮箱 | 1176356383@qq.com</div>
         <p class="lead mb-4">我是郭嘉毅，就读于深圳职业技术大学通信软件技术专业。在校期间，我积极学习专业知识，参与多个项目实践，积累了丰富的通信软件开发与调试经验。<br><br>
         我对通信领域充满热情，致力于将所学知识应用到实际项目中，不断提升自己的技术能力和解决问题的能力。熟练掌握Java、Python等编程语言，熟悉通信网络架构和软件开发流程，具备良好的团队协作能力和创新思维。<br><br>
         希望未来能在通信软件行业中继续深耕，为行业发展贡献自己的力量。</p>
         <div class="social-icons">
-          <a target="_blank" id="socialicon-1" href="https://linkedin.com">
-            <i class="fab fa-linkedin-in"></i>
-          </a>
-          <a target="_blank" id="socialicon-2" href="https://github.com">
+          
+          <a target="_blank" id="socialicon-2" href="https://github.com/guojiayi2004">
             <i class="fab fa-github"></i>
           </a>
-          <a target="_blank" id="socialicon-3" href="https://twitter.com">
-            <i class="fab fa-twitter"></i>
-          </a>
-          <a target="_blank" id="socialicon-4" href="mailto:your_email@example.com">
+          
+          <a target="_blank" id="socialicon-4" href="mailto:1176356383@qq.com">
             <i class="fa fa-envelope"></i>
           </a>
         </div>
